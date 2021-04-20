@@ -32,12 +32,13 @@
 .white_text {
 	color: #fff;
 }
+
 /* GLOBAL STYLING END */
 
 .thead_tableSection {
 	background: var(--theme);
 	color: #fff;
-	padding: 10px ;
+	padding: 10px;
 }
 
 th {
@@ -47,3 +48,230 @@ th {
 tr {
 	text-align: center;
 }
+
+.themeBtn {
+	border: none;
+	outline: none;
+	background-color: var(--theme);
+	color: #fff;
+	padding: 8px 20px;
+	border-radius: 4px;
+}
+
+.themeWhiteBtn {
+	border: none;
+	outline: none;
+	background-color: #f2f2f2;
+	color: var(--theme);
+	padding: 8px 20px;
+	border-radius: 4px;
+}
+
+.themeBtn:focus,
+.themeWhiteBtn:focus {
+	border: none;
+	outline: none;
+}
+
+.themeText {
+	color: var(--theme);
+}
+
+/* = HERO SECTION START = */
+.hero_section {
+	position: relative;
+	background-image: linear-gradient(
+			-30deg,
+			rgba(0, 0, 0, 0.8) 0%,
+			rgba(0, 0, 0, 0.8) 100%
+		),
+		url(./assets/heroImg.svg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* UPPER NAVBAR */
+.sideline {
+	border-right: 1px solid #ccc;
+	height: 22px;
+	display: flex;
+	align-items: center;
+}
+
+/* BELOW NAVBAR */
+.belowNavbar {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 6px;
+}
+
+.hero_text {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	text-align: center;
+}
+
+.hero_text h1 {
+	font-size: 60px;
+}
+/* = HERO SECTION END = */
+
+/* = SECTION 2 START = */
+.section2Image img {
+	width: 100%;
+	height: auto;
+}
+
+.section2Points img {
+	width: 25px;
+	height: auto;
+}
+/* = SECTION 2 END = */
+
+/* = SECTION 3 START = */
+.section3Container {
+	background: url(./assets/section3.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 6px;
+}
+
+.section3Container .cardContainer {
+	width: 280px;
+}
+.section3Container .cardContainer img {
+	width: 85px;
+	height: auto;
+}
+/* = SECTION 3 END = */
+
+/* = SECTION 4 START = */
+.section4Card {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 1.25rem rgb(108, 118, 134, 10%);
+	box-shadow: 0 0 1.25rem rgb(108, 118, 134, 10%);
+	padding: 1.5rem 1.2rem;
+	margin-bottom: 3rem;
+	border-radius: 0.5rem;
+	border: 1px solid rgb(242, 242, 242);
+}
+
+.section4Card h6 {
+	font-size: 12px;
+}
+
+.section4Card img {
+	width: 65px;
+}
+
+/* = SECTION 4 END = */
+
+/* = SECTION 5 START = */
+/* .section5Card {
+	background-color: #fff;
+	margin-bottom: 3rem;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+.section5_container_mainBg {
+	background-color: rgb(248, 248, 248);
+	padding: 3rem;
+}
+
+.section5_container {
+	max-width: 1110px;
+	margin: auto;
+}
+
+.section5Row {
+	background: url(./assets/section5Line.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@media screen and (max-width: 992px) {
+	.section5Row {
+		background: none;
+	}
+}
+/* = SECTION 5 END = */
+
+/* = SECTION 6 START = */
+.section6Image img {
+	width: 100%;
+}
+
+.section6Card {
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 1.25rem rgb(108, 118, 134, 10%);
+	box-shadow: 0 0 1.25rem rgb(108, 118, 134, 10%);
+	padding: 16px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+}
+
+.section6Card h6 {
+	font-size: 13px;
+}
+
+.section6Card h4 {
+	font-size: 19px;
+}
+/* = SECTION 6 END = */
+
+/* = SECTION 7 START = */
+.contactLeftSide {
+	background-image: linear-gradient(
+			-30deg,
+			rgba(136, 23, 41, 0.8) 0%,
+			rgba(136, 23, 41, 0.8) 100%
+		),
+		url(./assets/heroImg.svg);
+	object-fit: contain;
+	padding: 7rem 0rem;
+}
+
+.contactRightSide {
+	background-color: rgb(248, 248, 248);
+	width: 100%;
+	padding: 2.5rem 1rem;
+	text-align: right;
+}
+
+.inputContainer {
+	display: flex;
+	width: 100%;
+}
+
+.inputContainer input:nth-child(1),
+.inputContainer input:nth-child(2) {
+	width: 50%;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	padding: 20px 12px;
+	border-radius: 4px;
+	margin: 0px 10px;
+}
+
+textarea {
+	width: 97%;
+}
+
+/* = SECTION 7 END = */
+
+/* = FOOTER  START = */
+.footer {
+	background-color: rgb(248, 248, 248);
+}
+/* = FOOTER  END = */
