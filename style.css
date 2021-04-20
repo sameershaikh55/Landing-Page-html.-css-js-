@@ -26,5 +26,24 @@
 	background-color: #881729;
 	width: 50px;
 	margin: auto;
+	margin-top: -8px;
+}
+
+.white_text {
+	color: #fff;
 }
 /* GLOBAL STYLING END */
+
+.thead_tableSection {
+	background: var(--theme);
+	color: #fff;
+	padding: 10px ;
+}
+
+th {
+	text-align: right;
+}
+
+tr {
+	text-align: center;
+}
