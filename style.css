@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* CSS VARIABLES START */
 :root {
 	--theme: #881729;
