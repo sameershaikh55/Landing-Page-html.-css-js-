@@ -10,7 +10,12 @@
 }
 /* CSS VARIABLES END */
 
-a {
+.anchorMap {
+	border-bottom: 1px solid white;
+	color: white;
+}
+
+.anchorMap:hover {
 	border-bottom: 1px solid blue;
 }
 
@@ -389,3 +394,10 @@ textarea {
 	background-color: rgb(248, 248, 248);
 }
 /* = FOOTER  END = */
+
+@media screen and (max-width: 460px) {
+	.belowNavbar .logoContainer img {
+		width: 10px;
+		height: auto;
+	}
+}
