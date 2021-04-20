@@ -321,6 +321,10 @@ tr {
 	background-size: contain;
 }
 
+.section5Row h6 {
+	color: #808080;
+}
+
 @media screen and (max-width: 992px) {
 	.section5Row {
 		background: none;
@@ -344,6 +348,7 @@ tr {
 
 .section6Card h6 {
 	font-size: 13px;
+	color: #808080;
 }
 
 .section6Card h4 {
