@@ -196,6 +196,16 @@ tr {
 	font-size: 60px;
 }
 
+.navbarHide a,
+.resNav a {
+	color: #fff;
+	text-decoration: none;
+}
+.navbarHide a:hover,
+.resNav a:hover {
+	text-decoration: none;
+}
+
 @media screen and (max-width: 750px) {
 	.hero_text {
 		width: 70%;
