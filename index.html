@@ -88,7 +88,11 @@
 						</div>
 						<!-- LOWER NAVBAR END -->
 
-						<div style="font-size: 1.2rem" class="pr-3 mt-2 resNav">
+						<div
+							style="font-size: 1.2rem"
+							class="pr-3 mt-2 collapse navbar-collapse resNav"
+							id="navCollapse"
+						>
 							<div class="text-white text-right d-flex flex-column">
 								<div class="mx-2 mb-2">اتصل بنا</div>
 								<div class="mx-2 mb-2">رحلة عميل ضامن</div>
@@ -583,6 +587,13 @@
 			</div>
 		</footer>
 		<!-- == FOOTER SECTION END == -->
+
+		<script>
+			document.getElementById("hambergerID").addEventListener("click", () => {
+				document.getElementById("navCollapse").classList.toggle("collapse");
+				document.getElementById("navCollapse").style.opacity = 1;
+			});
+		</script>
 
 		<!-- jQuery -->
 		<script src="/bootstrap/jquery-2.1.0.min.js"></script>

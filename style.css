@@ -157,9 +157,12 @@ tr {
 
 .resNav {
 	display: none;
+	z-index: 99999999999999;
 	padding: 10px;
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 6px;
+	opacity: 0;
+	transition: 1s all;
 }
 
 /* HAMBURGER END */
@@ -185,6 +188,9 @@ tr {
 @media screen and (max-width: 750px) {
 	.hero_text {
 		width: 70%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, 50%);
 	}
 	.hero_text h1 {
 		font-size: 48px;
@@ -193,9 +199,9 @@ tr {
 @media screen and (max-width: 500px) {
 	.hero_text {
 		width: 90%;
-		top: 35%;
+		top: 50%;
 		left: 50%;
-		transform: translate(-50%, 100%);
+		transform: translate(-50%, 50%);
 	}
 	.hero_text h1 {
 		font-size: 40px;
@@ -231,6 +237,9 @@ tr {
 	}
 	.navbarHide {
 		display: none !important;
+	}
+	.resNav {
+		display: block;
 	}
 }
 
