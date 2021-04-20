@@ -10,6 +10,10 @@
 }
 /* CSS VARIABLES END */
 
+a {
+	border-bottom: 1px solid blue;
+}
+
 /* GLOBAL STYLING START */
 .section_container {
 	max-width: 1000px;
@@ -38,7 +42,7 @@
 .thead_tableSection {
 	background: var(--theme);
 	color: #fff;
-	padding: 10px;
+	font-weight: 600;
 }
 
 th {
@@ -100,6 +104,66 @@ tr {
 	align-items: center;
 }
 
+/* HAMBURGER START */
+.hamburger {
+	display: none;
+}
+.hamburger .menu {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	padding: 0;
+}
+.hamburger .line {
+	fill: none;
+	stroke: white;
+	stroke-width: 6;
+	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+		stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hamburger .line1 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.hamburger .line2 {
+	stroke-dasharray: 60 60;
+	stroke-width: 6;
+}
+.hamburger .line3 {
+	stroke-dasharray: 60 207;
+	stroke-width: 6;
+}
+.hamburger .opened .line1 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
+.hamburger .opened .line2 {
+	stroke-dasharray: 1 60;
+	stroke-dashoffset: -30;
+	stroke-width: 6;
+}
+.hamburger .opened .line3 {
+	stroke-dasharray: 90 207;
+	stroke-dashoffset: -134;
+	stroke-width: 6;
+}
+
+.hamburger button:focus {
+	outline: none;
+	border: none;
+}
+
+.resNav {
+	display: none;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 6px;
+}
+
+/* HAMBURGER END */
+
 /* BELOW NAVBAR */
 .belowNavbar {
 	background: rgba(255, 255, 255, 0.2);
@@ -117,6 +181,26 @@ tr {
 .hero_text h1 {
 	font-size: 60px;
 }
+
+@media screen and (max-width: 750px) {
+	.hero_text {
+		width: 70%;
+	}
+	.hero_text h1 {
+		font-size: 48px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.hero_text {
+		width: 90%;
+		top: 35%;
+		left: 50%;
+		transform: translate(-50%, 100%);
+	}
+	.hero_text h1 {
+		font-size: 40px;
+	}
+}
 /* = HERO SECTION END = */
 
 /* = SECTION 2 START = */
@@ -125,10 +209,31 @@ tr {
 	height: auto;
 }
 
+@media screen and (max-width: 1000px) {
+	.section2Image {
+		text-align: center;
+	}
+
+	.section2Image img {
+		width: 60%;
+		height: auto;
+	}
+}
+
 .section2Points img {
 	width: 25px;
 	height: auto;
 }
+
+@media screen and (max-width: 890px) {
+	.hamburger {
+		display: block;
+	}
+	.navbarHide {
+		display: none !important;
+	}
+}
+
 /* = SECTION 2 END = */
 
 /* = SECTION 3 START = */
